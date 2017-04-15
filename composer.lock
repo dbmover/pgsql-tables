@@ -1,0 +1,47 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "9b67360192257778f6ca169f0ebf9e42",
+    "content-hash": "b49b2ffd8500fcfe5f5982f6f6115ea2",
+    "packages": [
+        {
+            "name": "dbmover/tables",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbmover/tables.git",
+                "reference": "3a3b727879c7469a7dddbb965cbbedfdb2a41a5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dbmover/tables/zipball/3a3b727879c7469a7dddbb965cbbedfdb2a41a5d",
+                "reference": "3a3b727879c7469a7dddbb965cbbedfdb2a41a5d",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Ophorst",
+                    "email": "marijn@monomelodies.nl"
+                }
+            ],
+            "description": "Dbmover plugin to migrate table definitions",
+            "time": "2017-04-08 15:20:10"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
