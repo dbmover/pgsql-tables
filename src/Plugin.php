@@ -72,7 +72,6 @@ class Plugin extends Tables\Plugin
         } elseif (!$definition['is_nullable'] && $current['is_nullable']) {
             $sql[] = "ALTER TABLE $table ALTER COLUMN $column SET NOT NULL;";
         }
-        if ($sql) var_dump($table, $sql);
         return $sql;
     }
 
