@@ -47,6 +47,7 @@ class Plugin extends Tables\Plugin
                 case '_int8': $current['column_type'] = 'BIGINT[]'; break;
                 case '_varchar': $current['column_type'] = 'VARCHAR[]'; break;
                 case '_float8': $current['column_type'] = 'FLOAT[]'; break;
+                case '_text': $current['column_type'] = 'TEXT[]'; break;
             }
         }
         $sql = [];
