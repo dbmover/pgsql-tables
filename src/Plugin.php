@@ -52,7 +52,6 @@ class Plugin extends Tables\Plugin
         }
         $sql = [];
         if ($definition['column_type'] != $current['column_type']) {
-            var_dump($definition['column_type'], $current['column_type']);
             $sql[] = "ALTER TABLE $table ALTER COLUMN $column TYPE {$definition['column_type']};";
         }
         if (!is_null($current['column_default'])) {
