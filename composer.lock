@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d381f4cff27ba2ad0633cd7a8ec98094",
-    "content-hash": "bf44c1d5762fe4ea933ec280e1940b68",
+    "hash": "60c26c81522d07d6ca0dee425566011e",
+    "content-hash": "e4ec8598ae40ecd5cc35eadb19fa4d1c",
     "packages": [
         {
             "name": "dbmover/core",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/core.git",
-                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3"
+                "reference": "65ebb5fb410080f1a533892f86fe795923d74d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/core/zipball/b94862d0a6f24ff7be859b3187cddbe52513fcc3",
-                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3",
+                "url": "https://api.github.com/repos/dbmover/core/zipball/65ebb5fb410080f1a533892f86fe795923d74d28",
+                "reference": "65ebb5fb410080f1a533892f86fe795923d74d28",
                 "shasum": ""
             },
             "require": {
@@ -50,24 +50,24 @@
                 }
             ],
             "description": "PHP-based database versioning tool, core components",
-            "time": "2018-03-24 07:05:17"
+            "time": "2018-03-24 17:47:12"
         },
         {
             "name": "dbmover/tables",
-            "version": "0.6.5",
+            "version": "0.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/tables.git",
-                "reference": "660c8bc1370b0111aa9a80266e08110df69e222c"
+                "reference": "638b73e3e8d999b23dde210346d3351924a68f37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/tables/zipball/660c8bc1370b0111aa9a80266e08110df69e222c",
-                "reference": "660c8bc1370b0111aa9a80266e08110df69e222c",
+                "url": "https://api.github.com/repos/dbmover/tables/zipball/638b73e3e8d999b23dde210346d3351924a68f37",
+                "reference": "638b73e3e8d999b23dde210346d3351924a68f37",
                 "shasum": ""
             },
             "require": {
-                "dbmover/core": "^0.7.0",
+                "dbmover/core": "^0.8.0",
                 "php": ">=7.2"
             },
             "type": "library",
@@ -87,7 +87,7 @@
                 }
             ],
             "description": "Dbmover plugin to migrate table definitions",
-            "time": "2018-03-24 08:56:22"
+            "time": "2018-03-24 18:13:21"
         },
         {
             "name": "monomelodies/kingconf",
