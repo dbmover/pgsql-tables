@@ -4,28 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "76fd4d0a75fdd42c1960e04f0e9ecc5f",
-    "content-hash": "b49b2ffd8500fcfe5f5982f6f6115ea2",
+    "hash": "d381f4cff27ba2ad0633cd7a8ec98094",
+    "content-hash": "bf44c1d5762fe4ea933ec280e1940b68",
     "packages": [
         {
             "name": "dbmover/core",
-            "version": "0.6.3",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/core.git",
-                "reference": "25243cd98db75d0b18b3507a0764a1038e62ae6d"
+                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/core/zipball/25243cd98db75d0b18b3507a0764a1038e62ae6d",
-                "reference": "25243cd98db75d0b18b3507a0764a1038e62ae6d",
+                "url": "https://api.github.com/repos/dbmover/core/zipball/b94862d0a6f24ff7be859b3187cddbe52513fcc3",
+                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3",
                 "shasum": ""
             },
             "require": {
-                "monomelodies/kingconf": "^1.1"
+                "monomelodies/kingconf": "^1.1",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "gentry/gentry": "^0.10.2"
+                "gentry/gentry": "^0.13.0",
+                "gentry/toast": "^0.1.0",
+                "toast/unit": "^1.3"
             },
             "bin": [
                 "bin/dbmover"
@@ -47,24 +50,25 @@
                 }
             ],
             "description": "PHP-based database versioning tool, core components",
-            "time": "2017-04-16 12:36:02"
+            "time": "2018-03-24 07:05:17"
         },
         {
             "name": "dbmover/tables",
-            "version": "0.6.3",
+            "version": "0.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/tables.git",
-                "reference": "af81f08078fe32719f2861c7003005ebb9c6e97d"
+                "reference": "660c8bc1370b0111aa9a80266e08110df69e222c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/tables/zipball/af81f08078fe32719f2861c7003005ebb9c6e97d",
-                "reference": "af81f08078fe32719f2861c7003005ebb9c6e97d",
+                "url": "https://api.github.com/repos/dbmover/tables/zipball/660c8bc1370b0111aa9a80266e08110df69e222c",
+                "reference": "660c8bc1370b0111aa9a80266e08110df69e222c",
                 "shasum": ""
             },
             "require": {
-                "dbmover/core": "^0.6.0"
+                "dbmover/core": "^0.7.0",
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -83,20 +87,20 @@
                 }
             ],
             "description": "Dbmover plugin to migrate table definitions",
-            "time": "2017-04-15 11:20:56"
+            "time": "2018-03-24 08:56:22"
         },
         {
             "name": "monomelodies/kingconf",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/monomelodies/kingconf.git",
-                "reference": "350bf4e1f8163b5843f9dec82bd6230968166015"
+                "reference": "ddf504a7f5fa50adeb68eb7627a76fbbdd5b8b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monomelodies/kingconf/zipball/350bf4e1f8163b5843f9dec82bd6230968166015",
-                "reference": "350bf4e1f8163b5843f9dec82bd6230968166015",
+                "url": "https://api.github.com/repos/monomelodies/kingconf/zipball/ddf504a7f5fa50adeb68eb7627a76fbbdd5b8b3a",
+                "reference": "ddf504a7f5fa50adeb68eb7627a76fbbdd5b8b3a",
                 "shasum": ""
             },
             "require": {
@@ -133,27 +137,30 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2016-07-15 06:21:55"
+            "time": "2018-02-01 18:46:24"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.7",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621"
+                "reference": "de5f125ea39de846b90b313b2cfb031a0152d223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/62b4cdb99d52cb1ff253c465eb1532a80cebb621",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/de5f125ea39de846b90b313b2cfb031a0152d223",
+                "reference": "de5f125ea39de846b90b313b2cfb031a0152d223",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^7.1.3"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
             },
             "require-dev": {
-                "symfony/console": "~2.8|~3.0"
+                "symfony/console": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/console": "For validating YAML files using the lint command"
@@ -161,7 +168,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -188,7 +195,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-03-20 09:45:15"
+            "time": "2018-02-19 20:08:53"
         }
     ],
     "packages-dev": [],
@@ -197,6 +204,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2"
+    },
     "platform-dev": []
 }
