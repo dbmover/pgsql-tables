@@ -16,6 +16,10 @@ class Plugin extends Tables\Plugin
 {
     protected $columns;
 
+    /**
+     * @param Dbmover\Core\Loader $loader
+     * @return void
+     */
     public function __construct(Loader $loader)
     {
         parent::__construct($loader);
@@ -32,6 +36,13 @@ class Plugin extends Tables\Plugin
             ORDER BY ORDINAL_POSITION ASC");
     }
 
+    /**
+     * @param string $table
+     * @param string $column
+     * @param array $definition
+     * @param array $current
+     * @return array
+     */
     protected function modifyColumn(string $table, string $column, array $definition, array $current) : array
     {
         if ($current['column_type'] == 'CHARACTER VARYING') {
@@ -75,6 +86,11 @@ class Plugin extends Tables\Plugin
         return $sql;
     }
 
+    /**
+     * @param string $definition
+     * @param string $current
+     * @return bool
+     */
     protected function defaultsDiffer(string $definition, string $current) : bool
     {
         if (strpos($current, '::timestamp')) {
